@@ -25,7 +25,7 @@ let options = {
   ],
 };
 
-//count
+//count start
 let winCount = 0;
 let count = 0;
 
