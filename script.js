@@ -118,3 +118,8 @@ const initializer = () => {
             }
           }
         });
+      } else {
+        //lose count
+        count += 1;
+        //for drawing man
+        drawMan(count);
