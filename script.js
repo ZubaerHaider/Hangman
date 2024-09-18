@@ -110,3 +110,11 @@ const initializer = () => {
             dashes[index].innerText = char;
             //increment counter
             winCount += 1;
+             //if winCount equals word lenfth
+             if (winCount == charArray.length) {
+              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+              //block all buttons
+              blocker();
+            }
+          }
+        });
