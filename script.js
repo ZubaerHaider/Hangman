@@ -96,4 +96,8 @@ const initializer = () => {
    for (let i = 65; i < 91; i++) {
     let button = document.createElement("button");
     button.classList.add("letters");
-    
+    //Number to ASCII[A-Z]
+    button.innerText = String.fromCharCode(i);
+    button.addEventListener("click", () => {
+      let charArray = chosenWord.split("");
+      let dashes = document.getElementsByClassName("dashes");
