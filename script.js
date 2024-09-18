@@ -80,14 +80,4 @@ const generateWord = (optionValue) => {
    //Display each element as span
    userInputSection.innerHTML = displayItem;
  };
- //Initial Function (Called when page loads/user presses new game)
-const initializer = () => {
-  winCount = 0;
-  count = 0;
-
-  //Initially erase all content and hide letteres and new game button
-  userInputSection.innerHTML = "";
-  optionsContainer.innerHTML = "";
-  letterContainer.classList.add("hide");
-  newGameContainer.classList.add("hide");
-  letterContainer.innerHTML = "";
+ 
