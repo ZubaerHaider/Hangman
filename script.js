@@ -65,3 +65,18 @@ const generateWord = (optionValue) => {
     }
     button.disabled = true;
   });
+   //initially hide letters, clear previous word
+   letterContainer.classList.remove("hide");
+   userInputSection.innerText = "";
+ 
+   let optionArray = options[optionValue];
+   //choose random word
+   chosenWord = optionArray[Math.floor(Math.random() * optionArray.length)];
+   chosenWord = chosenWord.toUpperCase();
+ 
+   //replace every letter with span containing dash
+   let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
+ 
+   //Display each element as span
+   userInputSection.innerHTML = displayItem;
+ };
