@@ -98,3 +98,6 @@ const initializer = () => {
     button.classList.add("letters");
     //Number to ASCII[A-Z]
     button.innerText = String.fromCharCode(i);
+    button.addEventListener("click", () => {
+      let charArray = chosenWord.split("");
+      let dashes = document.getElementsByClassName("dashes");
