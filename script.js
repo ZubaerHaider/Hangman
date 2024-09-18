@@ -123,3 +123,9 @@ const initializer = () => {
         count += 1;
         //for drawing man
         drawMan(count);
+         //Count==6 because head,body,left arm, right arm,left leg,right leg
+         if (count == 6) {
+          resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+          blocker();
+        }
+      }
