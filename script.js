@@ -101,3 +101,12 @@ const initializer = () => {
     button.addEventListener("click", () => {
       let charArray = chosenWord.split("");
       let dashes = document.getElementsByClassName("dashes");
+       //if array contains clciked value replace the matched dash with letter else dram on canvas
+       if (charArray.includes(button.innerText)) {
+        charArray.forEach((char, index) => {
+          //if character in array is same as clicked button
+          if (char === button.innerText) {
+            //replace dash with letter
+            dashes[index].innerText = char;
+            //increment counter
+            winCount += 1;
