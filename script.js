@@ -129,3 +129,15 @@ const initializer = () => {
           blocker();
         }
       }
+       //disable clicked button
+       button.disabled = true;
+      });
+      letterContainer.append(button);
+    }
+  
+    displayOptions();
+    //Call to canvasCreator (for clearing previous canvas and creating initial canvas)
+    let { initialDrawing } = canvasCreator();
+    //initialDrawing would draw the frame
+    initialDrawing();
+  };
