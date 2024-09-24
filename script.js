@@ -129,4 +129,28 @@ const initializer = () => {
           blocker();
         }
       }
-      
+       //disable clicked button
+       button.disabled = true;
+      });
+      letterContainer.append(button);
+    }
+  
+    displayOptions();
+    //Call to canvasCreator (for clearing previous canvas and creating initial canvas)
+    let { initialDrawing } = canvasCreator();
+    //initialDrawing would draw the frame
+    initialDrawing();
+  };
+  //Canvas
+const canvasCreator = () => {
+  let context = canvas.getContext("2d");
+  context.beginPath();
+  context.strokeStyle = "#000";
+  context.lineWidth = 2;
+
+  //For drawing lines
+  const drawLine = (fromX, fromY, toX, toY) => {
+    context.moveTo(fromX, fromY);
+    context.lineTo(toX, toY);
+    context.stroke();
+  };
