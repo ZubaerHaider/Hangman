@@ -159,3 +159,23 @@ const canvasCreator = () => {
     context.arc(70, 30, 10, 0, Math.PI * 2, true);
     context.stroke();
   };
+  
+  const body = () => {
+    drawLine(70, 40, 70, 80);
+  };
+
+  const leftArm = () => {
+    drawLine(70, 50, 50, 70);
+  };
+
+  const rightArm = () => {
+    drawLine(70, 50, 90, 70);
+  };
+
+  const leftLeg = () => {
+    drawLine(70, 80, 50, 110);
+  };
+
+  const rightLeg = () => {
+    drawLine(70, 80, 90, 110);
+  };
