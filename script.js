@@ -220,4 +220,6 @@ const drawMan = (count) => {
       break;
   }
 };
-
+//New Game
+newGameButton.addEventListener("click", initializer);
+window.onload = initializer;
