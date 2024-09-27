@@ -192,4 +192,6 @@ const canvasCreator = () => {
     //small top line
     drawLine(70, 10, 70, 20);
   };
+  return { initialDrawing, head, body, leftArm, rightArm, leftLeg, rightLeg };
+};
 
